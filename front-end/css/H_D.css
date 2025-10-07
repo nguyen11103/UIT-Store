@@ -1,0 +1,336 @@
+.navone .container-fluid {
+   display: flex;
+   justify-content: space-between; 
+   align-items: center; 
+   width: 100%; 
+}
+.container-fluid {
+   display: flex; 
+   width: 100%; 
+   justify-content: space-between;  
+
+}
+.tog {
+   width: auto;
+}
+.fa-magnifying-glass {
+   font-size: 20px;
+}
+.nav-link {
+   color: #12212D !important;
+   text-transform: uppercase;
+   font-family: 'Be Vietnam Pro';
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.navbar-brand {
+   justify-content: flex-start; 
+}
+.logo, .account-cart {
+   width: 150px; 
+   height: 100px;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+}
+.logo {
+   display: inline-block;
+   flex-grow: 0 !important;
+}
+.logo1 {
+   width: 100px;
+   height: 100px;
+   margin-right: auto;
+}
+
+.navbar .container-fluid {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+.logo {
+   flex-shrink: 0;
+   margin-left: 100px;
+}
+.contents {
+   flex-grow: 1; 
+   text-align: center; /
+}
+.contents h1 {
+   margin: 0;
+   font-size: 30px;
+}
+
+.account-cart {
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   gap: 10px; 
+   margin-right: 80px;
+}
+.account-cart a {
+   color: inherit; 
+   text-decoration: none;
+   font-size: 1.2rem;
+}
+::-webkit-input-placeholder {
+   font-family: 'Be Vietnam Pro';
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 15px !important;
+}
+.fa-user {
+   color: #12212D;
+   font-size: 20px;
+}
+
+.fa-cart-shopping {
+   color: #12212D;
+   font-size: 20px; 
+}
+
+ /* ----------menu--------- */
+ 
+.bg-secondary{
+   background-color: #12212D!important;
+}
+.menu .nav-item {
+   transition: all 0.3s ease-in; 
+}
+
+.menu .nav-item .nav-link {
+   margin: 0 30px; 
+   display: block;
+   padding: 11px 20px; 
+   text-transform: uppercase; 
+   letter-spacing: 1px;
+   color: #ffffff !important; 
+   text-decoration: none;
+}
+/* Hiệu ứng hover: Tăng sáng khi di chuột vào */
+.menu .nav-item:hover .nav-link {
+   color: #ffffff; 
+   background-color: #c0ddf457; 
+   border: 2px solid #3f06064d; 
+   border-radius: 30px;
+}
+
+ /* footer */
+ footer {
+   background-color: #12212d;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.footer-column {
+   flex: 1;
+   min-width: 250px;
+   margin: 10px;
+}
+.footer-column h6 {
+   font-size: 20px;
+   margin-bottom: 15px;
+   color: #fff;
+}
+.footer-column ul {
+   list-style-type: none;
+   padding: 0;
+}
+.footer-column ul li {
+   margin-bottom: 10px;
+   font-size: 12px;
+}
+.footer-column ul li a {
+   text-decoration: none;
+   color: #fff;
+   transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+   color: #f4b400;
+}
+.social-icons {
+   display: flex;
+   gap: 10px;
+}
+.social-icon svg {
+   width: 24px;
+   height: 24px;
+}
+.google-map iframe {
+   width: 100%;
+   height: 200px;
+   border: 0;
+}
+
+.copyright {
+   background-color: #12212df0;
+   color: #fff;
+   text-align: center;
+   padding: 15px;
+   width: 100%;
+}
+.show-mobile{
+   display: none;
+}
+
+
+/* reponsive mobile < 740px */
+@media only screen and (max-width: 46.1875em){
+   .navbar-brand img{
+      display: none;
+   }
+   .tog{
+      width: -webkit-fill-available;
+   }
+   .form-control{
+      display: none;
+   }
+   .navone{
+      display: none;
+   }
+   
+   .fa-user{
+      display: block;
+      color: #ffffff;
+   }
+   .fa-cart-shopping{
+      display: block;
+      color: #ffffff;
+   }
+   .fa-bars{
+      color:#ffffff;
+   }
+
+   .navbar-toggler:focus-visible{
+      border: none;
+      outline: none;
+   }
+   .container-fluid.tog{
+      justify-content: space-between !important;
+   }
+   .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
+      font-size: 9px;
+   }
+   .row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .link-info .nav .nav-item .nav-link,
+   .p-3,
+   .p-3 label{
+      font-size: 10px;
+      
+   }
+   .link-info .nav{
+      justify-content: space-evenly !important;
+   }
+   footer {
+      padding: 15px;
+  }
+
+  .footer-column {
+      margin-bottom: 15px;
+  }
+
+  .footer-column h6 {
+      font-size: 14px;
+  }
+
+  .footer-column ul li {
+      font-size: 10px;
+  }
+
+  .social-icons {
+      gap: 5px;
+  }
+
+  .social-icon svg {
+      width: 20px;
+      height: 20px;
+  }
+
+  .google-map iframe {
+      height: 200px;
+  }
+
+  .copyright {
+      font-size: 12px;
+  }
+
+   .logo a img{
+      display: none;
+   }
+   
+}
+
+
+/* reponsive taplet  >= 740px and width < 1024px */
+@media only screen and (min-width : 46.1875em) and (max-width : 63.9375em){
+   .show-mobile{
+      display: block;
+      text-decoration: none;
+   }
+   .fa-user{
+      display: block;
+      color: #ffffff;
+   }
+   .fa-cart-shopping{
+      display: block;
+      color: #ffffff;
+   }
+   .fa-bars{
+      color:#ffffff;
+   }
+   .navone{
+      display: none;
+   }
+   .container-fluid.tog{
+      justify-content: space-between !important;
+   }
+   .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
+      font-size: 12px;
+   }
+   .link-info .nav .nav-item .nav-link,
+   .p-3,
+   .p-3 label{
+      font-size: 13px;
+   }
+   .tog{
+      width: -webkit-fill-available;
+   }
+   .row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .green-footer{
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-size: auto 65px;
+    position: relative;
+    padding-top: 25px;
+   }
+   .green-footer::after{
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: #d1e383;
+
+   }
+}
+
+
+
+ 

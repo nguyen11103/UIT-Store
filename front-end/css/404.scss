@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../user/images/load.gif')
+    no-repeat center center;	
+    z-index: 99999;
+}
+.ps-404 {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .ps-404__content {
+        max-width: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Archivo Narrow", sans-serif;
+        font-size: 144px;
+        font-weight: 700;
+        letter-spacing: 20px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+
+        line-height: 1.5em;
+        color: #999999;
+    }
+
+    .ps-btn {
+        &:before {
+            background-color: rgba(#fff, .25);
+        }
+    }
+}
+
+
+.ps-btn {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    background-color: red;
+    line-height: 25px;
+    border: none;
+    border-radius: 60px;
+    transition: all .4s ease;
+
+    i {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        background-color: rgba(red, .07);
+        border-radius: 60px;
+        transition: all .4s ease;
+    }
+
+    &:hover {
+        background-color: black;
+        color: #fff;
+
+        &:before {
+            background-color: rgba(#000, .1);
+        }
+    }
+}
+
+.bg--cover {
+    background: url(../user/images/2498591.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
